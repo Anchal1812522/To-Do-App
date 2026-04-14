@@ -1,0 +1,113 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+
+}
+
+
+.container{
+    width : 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , rgb(3, 8, 45) , rgb(27, 27, 194));
+    padding: 10px;
+    
+}
+
+.heading{
+    width : 100%;
+    max-width:540px;
+    background-color: rgb(231, 227, 227);
+    opacity: 0.9;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+
+.heading h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    background-color: #e0dbdb;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+#input-box{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 16px;
+}
+
+button{
+    color: white;
+    background-color: rgb(19, 125, 19);
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 18px;
+    user-select: none;
+    color:black;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+   content:'';
+   position: absolute;
+   height : 27px;
+   width : 27px;
+   border-radius: 50%;
+   background-image: url(https://icons.veryicon.com/png/o/miscellaneous/basic-icon-5/unchecked-41.png);
+   background-size: cover;
+   background-position: center;
+   top: 12px;
+   left: 8px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #6f6f6f;
+}
+
+ul li.checked::before{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/027/836/111/non_2x/check-mark-in-green-circle-icon-flat-design-vector.jpg);
+}
+
+ul li span{
+    position: absolute;
+    height : 40px;
+    width : 40px;
+    text-align : center;
+    color: #555;
+    font-size:22px;
+    line-height: 40px;
+    right : 0;
+    top: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #ded9d9;
+}
+
